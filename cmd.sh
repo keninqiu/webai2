@@ -1,0 +1,1 @@
+ember generate locale zh

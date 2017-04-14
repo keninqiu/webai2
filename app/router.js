@@ -7,6 +7,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('women');
+  this.route('children');
+  this.route('men');
+  this.route('groupon');
 });
 
 export default Router;
