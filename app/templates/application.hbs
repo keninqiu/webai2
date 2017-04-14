@@ -14,4 +14,17 @@
   {{/navbar.content}}
 {{/bs-navbar}}
 
+{{#twbs-carousel classNames="slide" interval=1000 as |carousel|}}
+  {{#carousel.slide classNames="active" as |slide|}}
+    {{slide.img src="https://dummyimage.com/1600x900/f7d3a0/333.jpg&text=Slide+Animation+1" alt="A slide image."}}
+  {{/carousel.slide}}
+  {{#carousel.slide as |slide|}}
+    {{slide.img lazy="https://dummyimage.com/1600x900/f7d3a0/333.jpg&text=Slide+Animation+2" alt="A slide image."}}
+  {{/carousel.slide}}
+  ...
+  {{#carousel.slide as |slide|}}
+    {{slide.img lazy="https://dummyimage.com/1600x900/f7d3a0/333.jpg&text=Slide+Animation+5" alt="A slide image."}}
+  {{/carousel.slide}}
+{{/twbs-carousel}}
+
 {{outlet}}
